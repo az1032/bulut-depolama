@@ -12,14 +12,14 @@
 
 ---
 
-## 🚀 Öne Çıkan Özellikler
+## Öne Çıkan Özellikler
 
-### 📦 1. Parçalı ve Kesintisiz Yükleme (Chunked & Resumable)
+###  1. Parçalı ve Kesintisiz Yükleme (Chunked & Resumable)
 - Büyük dosyalar 1 MB'lık dinamik parçalara bölünerek sunucuya aktarılır.
 - İnternet bağlantısı kesilirse, bilgisayar kapanırsa veya yükleme durdurulursa işlem baştan **başlamaz**. Kaldığı son bayttan devam eder.
 - Dosya boyutu 0 bayt olan boş dosyalar da dahil olmak üzere tam dosya bütünlüğü korunur.
 
-### 📁 2. Entegre Sunucu Dosya Yöneticisi
+###  2. Entegre Sunucu Dosya Yöneticisi
 - Sunucunun deposundaki (`BulutDepolama`) tüm dizinleri tıpkı yerel bir dosya yöneticisi gibi gezebilirsiniz.
 - Canlı arama çubuğu ile isim ve dosya uzantısına (`.txt`, `.py`, `.png` vb.) göre anlık filtreleme yapılabilir.
 - **Anında Önizleme:** Metin/kod dosyaları ve görseller çift tıklanarak doğrudan pencere içinde görüntülenebilir.
@@ -27,24 +27,24 @@
 - **Büyük Dosya Güvenlik Bariyeri:** 30 MB'tan büyük dosyalar önizlenmek istendiğinde kullanıcıdan onay talep ederek arayüzün ve ağın kilitlenmesini engeller.
 - **Flaş Diske / Yerel Diske İndirme:** Dosyalar akış (stream) yöntemiyle harici bir USB belleğe veya bilgisayarınızdaki herhangi bir dizine kaydedilebilir.
 
-### ⏰ 3. Otomatik ve Zamanlanmış Yedekleme
+###  3. Otomatik ve Zamanlanmış Yedekleme
 - Belirlediğiniz klasörler, arka planda çalışan **APScheduler** zamanlayıcısı ile istediğiniz gün ve saatte otomatik olarak sunucuya aktarılır.
 - **Modern Zaman Seçici:** Tek tıkla hızlı erteleme (+1 saat, +3 saat, bu gece 22:00, yarın sabah 09:00) ve canlı geri sayım önizlemesi sunar.
 
-### 🛡️ 4. Siber Güvenlik ve Bot Kalkanı
+###  4. Siber Güvenlik ve Bot Kalkanı
 - **Brute-Force (Kaba Kuvvet) Engeli:** Üst üste 5 kez hatalı şifre gönderen IP adresleri sunucu tarafından 15 dakika boyunca engellenir (`HTTP 429 Too Many Requests`).
 - **Path Traversal Savunması:** Dizin atlama saldırılarını (`../../etc/passwd`) engelleyen güvenli hedef yol doğrulama mekanizması.
 - **Zamanlama Saldırısı Koruması (Timing Attack):** `secrets.compare_digest` ile sabit zamanlı şifre doğrulaması.
 - **Eşzamanlı Veri Kilidi (`threading.Lock`):** Aynı anda gelen çoklu isteklerde veritabanı dosyalarının (`hafiza.json`, `gorevler.json`) bozulması engellenir.
 
-### 🎨 5. Modern ve Emojisiz Arayüz Tasarımı
+### 5. Modern ve Emojisiz Arayüz Tasarımı
 - Koyu Catppuccin renk paleti (`#1e1e2e`, `#181825`, `#313244`, `#89b4fa`).
 - Kesinlikle emoji içermez; sade, beyaz ve şık Unicode simgelerle donatılmıştır.
 - İlk kez açıldığında kullanıcıyı karşılayan **"İlk Kurulum Sihirbazı"** sayesinde IP ve şifre tek tıkla yapılandırılır.
 
 ---
 
-## 🛠️ Kurulum Rehberi
+##  Kurulum Rehberi
 
 Proje iki ana bileşenden oluşur:
 1. **Sunucu (Server):** Dosyaları barındıran FastAPI arka ucu.
@@ -122,7 +122,7 @@ python client.py
 
 ---
 
-## 📂 Proje Dizin Yapısı
+##  Proje Dizin Yapısı
 
 ```text
 ├── client.py                 # PyQt6 Masaüstü İstemci Kaynak Kodu
@@ -138,7 +138,7 @@ python client.py
 
 ---
 
-## ❓ Sık Karşılaşılan Sorunlar ve Çözümleri
+##  Sık Karşılaşılan Sorunlar ve Çözümleri
 
 | Hata Kodu / Belirti | Olası Neden | Çözüm |
 | :--- | :--- | :--- |
@@ -149,7 +149,7 @@ python client.py
 
 ---
 
-## 👨‍💻 Geliştirici & İletişim
+##  Geliştirici & İletişim
 
 - **Geliştirici:** az1032
 - **GitHub:** [@az1032](https://github.com/az1032)
@@ -157,6 +157,6 @@ python client.py
 
 ---
 
-## 📄 Lisans
+## Lisans
 
 Bu proje **MIT Lisansı** altında lisanslanmıştır. Dilediğiniz gibi geliştirebilir, dağıtabilir veya kendi sunucularınızda kullanabilirsiniz.
