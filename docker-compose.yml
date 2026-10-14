@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bulut-depo:
+    build: .
+    container_name: bulut_depolama_sunucusu
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - BULUT_SIFRE=esatesat16.
+      - BULUT_PORT=8000
+      - BULUT_HOST=0.0.0.0
+    volumes:
+      # Sunucudaki dosyaların ve hafıza kayıtlarının kalıcı olması için mount edilir
+      - ./BulutDepolama:/app/BulutDepolama
+      - ./hafiza.json:/app/hafiza.json
+      - ./gorevler.json:/app/gorevler.json

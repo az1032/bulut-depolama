@@ -1,0 +1,4 @@
+# Bulut OS İstemci (Masaüstü Uygulaması) Bağımlılıkları
+PyQt6>=6.5.0
+requests>=2.31.0
+apscheduler>=3.10.0
